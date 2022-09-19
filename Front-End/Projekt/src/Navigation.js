@@ -30,7 +30,7 @@ class Navigation extends React.Component {
                         <Link to="/Favourite">Favourite</Link>
                     </li>
                     <li>
-                        <Link to="">Top Bücher</Link>
+                        <Link to='./TopBücher'>Top Bücher</Link>
                     </li>
                     <li>
                         <Link to="/Bewertungen">Bewertungen</Link>
