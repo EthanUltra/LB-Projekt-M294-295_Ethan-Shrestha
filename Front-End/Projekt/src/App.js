@@ -17,6 +17,20 @@ import NotFound from './NotFound';
 import Navigation from './Navigation';
 import React from 'react';
 
+function Layout() {
+  return (
+    <div className="App">
+      <Navigation />
+      <div className="content">
+        <header className="App-header">
+          <h1>Willkommen zum Webshop für Bücher</h1>
+          <Outlet />
+        </header>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   return (
     <Routes>
@@ -33,20 +47,6 @@ function App() {
       <Route path="*" element={<NotFound />} />
     </Routes>
   )
-}
-
-function Layout() {
-  return (
-    <div className="App">
-      <Navigation />
-      <div className="content">
-        <header className="App-header">
-          <h1>Willkommen zum Webshop für Bücher</h1>
-          <Outlet/>
-        </header>
-      </div>
-    </div>
-  );
 }
 
 

@@ -24,16 +24,16 @@ class Navigation extends React.Component {
                         <Link to="/Forums">Forums</Link>
                     </li>
                     <li>
-                        <Link to="Sprache">Sprache</Link>
+                        <Link to="/Sprache">Sprache</Link>
                     </li>
                     <li>
                         <Link to="/Favourite">Favourite</Link>
                     </li>
                     <li>
-                        <Link to="TopBücher">Top Bücher</Link>
+                        <Link to="">Top Bücher</Link>
                     </li>
                     <li>
-                        <Link to="Bewertungen">Bewertungen</Link>
+                        <Link to="/Bewertungen">Bewertungen</Link>
                     </li>
                 </ul>
             </nav>
