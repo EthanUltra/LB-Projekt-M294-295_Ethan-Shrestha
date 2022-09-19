@@ -9,7 +9,7 @@ class Favourite extends React.Component {
     render() {
         return (
             <div>
-                <h4>Homepage</h4>
+                <h4>Here are your books!</h4>
             </div>
         )
     }
