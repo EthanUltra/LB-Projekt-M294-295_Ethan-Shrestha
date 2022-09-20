@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react';
 
-class Genres extends React.Component {
+class Language extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -9,11 +9,10 @@ class Genres extends React.Component {
     render() {
         return (
             <div>
-                <h4>Homepage</h4>
-                <h4>Action</h4>
+                <h4>Change your language!</h4>
             </div>
         )
     }
 }
 
-export default Genres;
+export default Language;

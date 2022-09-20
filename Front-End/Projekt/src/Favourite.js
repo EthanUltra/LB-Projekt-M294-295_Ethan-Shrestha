@@ -9,8 +9,7 @@ class Favourite extends React.Component {
     render() {
         return (
             <div>
-                <h4>Here are your books!</h4>
-                <h4>...</h4>
+                <h4>Here are your favourite books!</h4>
             </div>
         )
     }

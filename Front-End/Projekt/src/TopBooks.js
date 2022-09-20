@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react';
 
-class Bewertungen extends React.Component {
+class TopBooks extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -9,10 +9,10 @@ class Bewertungen extends React.Component {
     render() {
         return (
             <div>
-                <h4>Homepage</h4>
+                <h4>Top Books</h4>
             </div>
         )
     }
 }
 
-export default Bewertungen;
+export default TopBooks;

@@ -1,7 +1,8 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react';
+import './Rating.css';
 
-class TopBücher extends React.Component {
+class Rating extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -9,10 +10,10 @@ class TopBücher extends React.Component {
     render() {
         return (
             <div>
-                <h4>Homepage</h4>
+                <h4>Ratings: 5/5</h4>
             </div>
         )
     }
 }
 
-export default TopBücher;
+export default Rating;

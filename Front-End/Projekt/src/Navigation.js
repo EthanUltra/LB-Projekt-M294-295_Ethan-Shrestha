@@ -10,32 +10,34 @@ class Navigation extends React.Component {
     render() {
         return (
             <nav>
-                <ul>
-                    <li>
-                        <Link to="/Home">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/Genres">Genres</Link>
-                    </li>
-                    <li>
-                        <Link to="/Konto">Konto</Link>
-                    </li>
-                    <li>
-                        <Link to="/Forums">Forums</Link>
-                    </li>
-                    <li>
-                        <Link to="/Sprache">Sprache</Link>
-                    </li>
-                    <li>
-                        <Link to="/Favourite">Favourite</Link>
-                    </li>
-                    <li>
-                        <Link to="/TopBücher">Top Bücher</Link>
-                    </li>
-                    <li>
-                        <Link to="/Bewertungen">Bewertungen</Link>
-                    </li>
-                </ul>
+                <div class="navigation_1">
+                    <ul>
+                        <li>
+                            <Link to="/Account">Account</Link>
+                        </li>
+                        <li>
+                            <Link to="/Favourite">Favorite</Link>
+                        </li>
+                        <li>
+                            <Link to="/Forums">Forums</Link>
+                        </li>
+                        <li>
+                            <Link to="/Genres">Genres</Link>
+                        </li>
+                        <li>
+                            <Link to="/Home">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/Language">Language</Link>
+                        </li>
+                        <li>
+                            <Link to="/Rating">Ratings</Link>
+                        </li>
+                        <li>
+                            <Link to="/TopBooks">Top Books</Link>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         )
     }

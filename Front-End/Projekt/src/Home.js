@@ -9,7 +9,7 @@ class Home extends React.Component {
     render(){
         return(
             <div>
-                <h4>Welcome to the Webshop</h4>
+                <h4>Welcome to the Webshop! Made by Ethan</h4>
             </div>
         )
     }
