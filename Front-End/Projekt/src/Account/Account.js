@@ -23,24 +23,26 @@ class Account extends React.Component {
         return (
             <NavUnlisted>
                 <h2>Your account</h2>
-
-                <h5>
+                
+            <ul class="no-bullets">
+                <li>
                     <Link to="/Privacy" style={linkStyle}>Privacy</Link>
-                </h5>
+                </li>
 
-                <h5>
+                <li>
                     <Link to="/Information" style={linkStyle}>Information</Link>
-                </h5>
+                </li>
 
-                <h5>
+                <li>
                     <Link to="/Orders" style={linkStyle}>Orders</Link>
-                </h5>
-                <h5>
+                </li>
+                <li>
                     <Link to="/TermsandService" style={linkStyle}>Terms and Service</Link>
-                </h5>
-                <h5>
+                </li>
+                <li>
                     <Link to="/Support" style={linkStyle}>Support</Link>
-                </h5>
+                </li>
+            </ul>
             </NavUnlisted>
         )
     }

@@ -1,0 +1,10 @@
+fieldset {
+    width: 50%;
+    border: 1px solid;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
