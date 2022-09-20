@@ -11,7 +11,7 @@ const NavUnlisted = styled.ul`
 const linkStyle = {
     margin: "1rem",
     textDecoration: "none",
-    color: 'darkblue'
+    color: 'grey'
 };
 
 class Account extends React.Component {
@@ -25,6 +25,9 @@ class Account extends React.Component {
                 <h2>Your account</h2>
                 
             <ul class="no-bullets">
+                <li>
+                    <Link to="/Login" style={linkStyle}>Login/Register</Link>
+                </li>
                 <li>
                     <Link to="/Privacy" style={linkStyle}>Privacy</Link>
                 </li>

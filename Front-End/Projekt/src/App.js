@@ -19,7 +19,8 @@ import Privacy from './Account/Privacy';
 import Information from './Account/Information';
 import Orders from './Account/Orders';
 import TermsAndService from './Account/Terms and Service';
-import Support from './Account/Support'
+import Support from './Account/Support';
+import Login from './Account/Login';
 import React from 'react';
 
 function Layout() {
@@ -47,6 +48,7 @@ function App() {
           <Route path="orders" element={<Orders />} />
           <Route path="termsandservice" element={<TermsAndService />} />
           <Route path="support" element={<Support />} />
+          <Route path="login" element={<Login />} />
         <Route path="language" element={<Language />} />
         <Route path="rating" element={<Rating />} />
         <Route path="topbooks" element={<TopBooks />} />

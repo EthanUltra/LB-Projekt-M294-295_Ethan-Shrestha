@@ -11,31 +11,35 @@ class Privacy extends React.Component {
     render() {
         return (
             <div>
-                <h4>Change your account privacy!</h4>
+                <h4>Privacy</h4>
+                <br></br>
                 <form>
                     <fieldset class="passwordreset">
-                        <legend>Reset your password</legend>
-                    <div>
-                        <label>Password:</label>
-                        <input type="password" id="myPassword"></input>
-                    </div>
-                    <div>
-                        <label>Confirm Password:</label>
-                        <input type="password" id="myConfirmedPassword"></input>
-                    </div>
-                    <input type="submit" value="Submit"></input>
-                </fieldset>
+                        <legend>New password?</legend>
+                        <div>
+                            <label>Old Password: </label>
+                            <input type="Password" id="myOldPassword"></input>
+                        </div>
+                        <div>
+                            <label>New Password: </label>
+                            <input type="Password" id="myNewPassword"></input>
+                        </div>
+                        <div>
+                            <label>Confirm Password: </label>
+                            <input type="Password" id="confirmedPassword"></input>
+                        </div>
+                        <input type="submit" value="Submit"></input>
+                    </fieldset>
                 </form>
-                <br></br>
                 <form>
                     <fieldset>
                     <legend>Your profile</legend>
                     <div>
-                        <label>Public:</label>
+                        <label>Public</label>
                         <input type="radio" id="public" name="privacy" value="PUBLIC"></input>
                     </div>
                     <div>
-                        <label>Private:</label>
+                        <label>Private</label>
                         <input type="radio" id="private" name="privacy" value="PRIVATE"></input>
                     </div>
                     </fieldset>
