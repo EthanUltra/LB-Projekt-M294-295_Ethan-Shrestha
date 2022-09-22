@@ -36,6 +36,15 @@ class Navigation extends React.Component {
                         <li>
                             <Link to="/TopBooks">Top Books</Link>
                         </li>
+                        <li>
+                            <Link to="./AGB">AGB</Link>
+                        </li>
+                        <li>
+                            <Link to="./Impressum">Impressum</Link>
+                        </li>
+                        <li>
+                            <Link to="./Datenschutzerklärung">Datenschutzerklärung</Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

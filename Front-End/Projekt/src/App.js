@@ -11,14 +11,14 @@ import Rating from './Rating';
 import TopBooks from './TopBooks';
 import Genres from './Genres/Genres';
 import Home from './Home';
-import Favourite from './Favourite';
+import Favourite from './Favourite/Favourite';
 import Forums from './Forums';
 import NotFound from './NotFound';
 import Navigation from './Navigation';
 import Privacy from './Account/Privacy';
 import Information from './Account/Information';
 import Orders from './Account/Orders';
-import TermsAndService from './Account/Terms and Service';
+import TermsAndService from './Account/TermsandService';
 import Support from './Account/Support';
 import Login from './Account/Login';
 import React from 'react';
@@ -29,7 +29,7 @@ function Layout() {
       <Navigation />
       <div className="content">
         <header className="App-header">
-          <h1>Willkommen zum Webshop für Bücher</h1>
+          <h2 class="title"><u>Willkommen zum Webshop für Bücher</u></h2>
           <Outlet />
         </header>
       </div>

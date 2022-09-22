@@ -12,7 +12,7 @@ import ch.wiss.webshop.model.CategoryRepository;
 
 @RestController // This means that this class is a Controller
 @RequestMapping(path = "/category") // This means URL's start with /demo (after Application path)
-public class CategoryController {
+public class AccountController {
 
 	@Autowired
 	private CategoryRepository categoryRepository;

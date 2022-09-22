@@ -10,8 +10,9 @@ class Support extends React.Component {
     render() {
         return (
             <div>
-                <h4>Call us!</h4>
+                <h4>Call or email us if you need help!</h4>
                 <h4>+41...</h4>
+                <h4>wiss@edu.com...</h4>
                 <p><Link to="../Account">Return to Account</Link></p>
             </div>
         )
