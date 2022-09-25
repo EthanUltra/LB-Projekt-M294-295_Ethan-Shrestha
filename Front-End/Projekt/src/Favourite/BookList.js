@@ -1,13 +1,12 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import PropTypes from "prop-types";
 
 class BookList extends React.Component {
     render() {
-        const product = this.props.book.map(item => (
+        const product = this.props.book.map(item => ( // Herr Meier über das fragen, warum es nicht geht...
             <div className="listbook" key={item.id}>
                 <div className="imagenya">
-                    <img className="imgstyle" src={item.image} alt={item.image} />
+                    <img className="imgstyle" src={item.image} alt={item.name} />
                 </div>
                 <div className="descnya">
                     <h3>Judul: {item.name}</h3>
@@ -22,11 +21,15 @@ class BookList extends React.Component {
         ));
         return (
             <div>
-                <h2>Daftar Buku</h2>
+                <h2>Favourite</h2>
                 {product}
             </div>
         )
     }
 }
+
+BookList.propTypes = {
+    book: PropTypes.number.isRequired
+};
 
 export default BookList;

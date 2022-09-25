@@ -6,14 +6,13 @@ const ButtonComponent = props => {
     // } else {
     //   return <button>loading</button>;
     // }
-    return <button>{props.load ? "click me" : "loading"}</button>;
+    return <button>{props.load ? "click me" : "loading"}</button>
 };
-
 
 // eslint-disable-next-line react/no-typos
 ButtonComponent.defaultprops = {
     warna: "red",
     load: true
-};
+}
 
 export default ButtonComponent;

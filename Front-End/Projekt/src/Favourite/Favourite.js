@@ -55,7 +55,7 @@ class Favourite extends React.Component {
                 <div className="wrap">
                     <div className="container-left">
                         <BookList books={this.state.books} add={this.addToFavourite} />
-                        <hr />
+                        <hr/>
                     </div>
                     <div className="container-right">
                         <BookFavourite
