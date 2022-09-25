@@ -1,27 +1,24 @@
-/* eslint-disable no-useless-constructor */
-import React from 'react';
+import React from 'react'
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, ForumlyMiddleware } from 'redux';
 import reduxThunk from "redux-thunk";
-
 import Header from './Header';
-import Main from './Header';
-
+import Footer from './Footer';
+import Main from './Main';
+import reducers from 'reducers';
 
 const persistedState = {};
-
 const store = createStore(
+    reducers,
     persistedState,
-    applyMiddleware(reduxThunk))
-
-const Forums = () => (
-    <Provider store={store} className="app">
+    ForumlyMiddleware(reduxThunk))
+const Forum = () => (
+    <Provider store={store} className="Forum">
         <main>
             <Header />
             <Main />
+            <Footer />
         </main>
     </Provider>
 )
-
-
-export default Forums;
+export default Forum;
