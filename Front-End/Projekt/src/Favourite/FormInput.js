@@ -18,7 +18,7 @@ class FormInput extends React.Component {
         e.preventDefault();
         const newbook = {
             id: 4,
-            image: require("../Bookcover/Clockwork-2008.png"),
+            image: require("./Bookcover/Clockwork-2008.png"),
             title: this.state.title,
             desc: this.state.desc,
             author: this.state.author

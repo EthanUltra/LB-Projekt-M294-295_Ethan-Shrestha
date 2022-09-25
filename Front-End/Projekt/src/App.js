@@ -12,7 +12,7 @@ import TopBooks from './TopBooks';
 import Genres from './Genres/Genres';
 import Home from './Home';
 import Favourite from './Favourite/Favourite';
-import Forums from './Forums';
+import Forums from './Forums/Forums';
 import NotFound from './NotFound';
 import Navigation from './Navigation';
 import Privacy from './Account/Privacy';

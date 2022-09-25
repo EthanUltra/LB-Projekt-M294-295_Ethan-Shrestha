@@ -13,14 +13,14 @@ class Favourite extends React.Component {
             {
                 id: 1,
                 name: "Clockwork-2008",
-                image: require("../Bookcover/Clockwork-2008.png"),
+                image: require('./Bookcover/Clockwork-2008.png'),
                 description: "This is a book about...",
                 author: "Anthony Burgess"
             },
             {
                 id: 2,
                 name: "The Gravity",
-                image: require("../Bookcover/TheGravity.png"),
+                image: require('./Bookcover/TheGravity.png'),
                 description: "This is a book about aliens...",
                 author: "Nille Lewis"
             }
