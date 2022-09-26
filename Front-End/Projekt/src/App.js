@@ -8,9 +8,9 @@ import {
 import Account from './Account/Account';
 import Language from './Language';
 import Rating from './Rating';
+import Home from './Home';
 import TopBooks from './TopBooks';
 import Genres from './Genres/Genres';
-import Home from './Home';
 import Favourite from './Favourite/Favourite';
 import Forums from './Forums/Forums';
 import NotFound from './NotFound';
@@ -43,19 +43,19 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route path="home" element={<Home />} />
         <Route path="account" element={<Account />} />
-          <Route path="privacy" element={<Privacy />} />
-          <Route path="information" element={<Information />} />
-          <Route path="orders" element={<Orders />} />
-          <Route path="termsandservice" element={<TermsAndService />} />
-          <Route path="support" element={<Support />} />
-          <Route path="login" element={<Login />} />
-        <Route path="language" element={<Language />} />
-        <Route path="rating" element={<Rating />} />
-        <Route path="topbooks" element={<TopBooks />} />
-        <Route path="genres" element={<Genres />} />
-        <Route path="favourite" element={<Favourite />} />
-        <Route path="forums" element={<Forums />} />
-      </Route>
+        <Route path="privacy" element={<Privacy />} />
+        <Route path="information" element={<Information />} />
+        <Route path="orders" element={<Orders />} />
+        <Route path="termsandservice" element={<TermsAndService />} />
+        <Route path="support" element={<Support />} />
+        <Route path="login" element={<Login />} />
+      <Route path="language" element={<Language />} />
+      <Route path="rating" element={<Rating />} />
+      <Route path="topbooks" element={<TopBooks />} />
+      <Route path="genres" element={<Genres />} />
+      <Route path="favourite" element={<Favourite />} />
+      <Route path="forums" element={<Forums />} />
+    </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
   )

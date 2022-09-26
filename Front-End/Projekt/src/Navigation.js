@@ -1,6 +1,7 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './App';
 
 class Navigation extends React.Component {
     constructor(props) {
@@ -9,8 +10,12 @@ class Navigation extends React.Component {
 
     render() {
         return (
-            <nav>
-                <div class="navigation_1">
+            <div class="navigation_1">
+                <div>
+                    <h1>React Books App</h1>
+                </div>
+                <div>Your favourites</div>
+                <nav>
                     <ul>
                         <li>
                             <Link to="/Account">Account</Link>
@@ -25,7 +30,7 @@ class Navigation extends React.Component {
                             <Link to="/Genres">Genres</Link>
                         </li>
                         <li>
-                            <Link to="/Home">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
                             <Link to="/Language">Language</Link>
@@ -46,8 +51,8 @@ class Navigation extends React.Component {
                             <Link to="./Datenschutzerklärung">Datenschutzerklärung</Link>
                         </li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>    
         )
     }
 }

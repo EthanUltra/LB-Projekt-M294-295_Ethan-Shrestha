@@ -6,10 +6,10 @@ class Home extends React.Component {
         super(props);
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <h4>Welcome to the Webshop! Made by Ethan</h4>
+                <h4>Homepage</h4>
             </div>
         )
     }
