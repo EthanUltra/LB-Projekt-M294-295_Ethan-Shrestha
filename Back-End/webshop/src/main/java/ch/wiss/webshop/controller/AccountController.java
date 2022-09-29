@@ -7,15 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import ch.wiss.webshop.model.AccountRepository;
 import ch.wiss.webshop.model.Category;
 import ch.wiss.webshop.model.CategoryRepository;
 
 @RestController // This means that this class is a Controller
-@RequestMapping(path = "/category") // This means URL's start with /demo (after Application path)
+@RequestMapping(path = "/account") // This means URL's start with /demo (after Application path)
 public class AccountController {
 
 	@Autowired
-	private CategoryRepository categoryRepository;
+	private AccountRepository categoryRepository;
 
 	@PostMapping(path = "") // Map ONLY POST Requests
 	public String addNewCategory(@RequestParam String name) {
