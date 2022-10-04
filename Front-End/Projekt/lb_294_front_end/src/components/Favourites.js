@@ -1,12 +1,15 @@
 import React from 'react';
 import '../App';
 import { useAppContext } from './context/appContext';
+import { useNavigate } from 'react-router-dom';
 
 const Favourites = () => {
 
     const { favourites, addToFavourites, removeFromFavourites } = useAppContext();
 
     console.log('favourites are', favourites);
+
+    const navigate = useNavigate();
 
     const favouritesChecker = (id) => {
         const boolean = favourites.some((book) => book.id === id);
@@ -23,7 +26,7 @@ const Favourites = () => {
                       <h4>{book.title}</h4>
                   </div>
                   <div>
-                      <img src={book.image_url} alt="#" />
+                  <img src={book.image_url} alt="#" onClick={() => navigate(`/books/${book.id}`)} />
                   </div>
                   <div>
                       {favouritesChecker(book.id) ? (

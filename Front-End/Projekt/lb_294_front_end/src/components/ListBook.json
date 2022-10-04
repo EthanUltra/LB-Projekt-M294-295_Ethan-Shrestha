@@ -1,0 +1,203 @@
+[
+    {
+        "id": 1,
+        "text": "The Hunger Games",
+        "link": "http://localhost:3000/books/1"
+    },
+    {
+        "id": 2,
+        "text": "Harry Potter and the Order of the Phoenix"
+    },
+    {
+        "id": 3,
+        "text": "To Kill a Mockingbird"
+    },
+    {
+        "id": 4,
+        "text": "Pride and Prejudice"
+    },
+    {
+        "id": 5,
+        "text": "Twilight"
+    },
+    {
+        "id": 6,
+        "text": "The Book Thief"
+    },
+    {
+        "id": 7,
+        "text": "The Chronicles of Narnia"
+    },
+    {
+        "id": 8,
+        "text": "Animal Farm"
+    },
+    {
+        "id": 9,
+        "text": "Gone with the Wind"
+    },
+    {
+        "id": 10,
+        "text": "J.R.R Tolkien 4-Book Boxed Set: The Hobbit And the Lord of the Rings"
+    },
+    {
+        "id": 11,
+        "text": "The Fault in Our Stars"
+    },
+    {
+        "id": 12,
+        "text": "The Hitchhiker's Guide to the Galaxy"
+    },
+    {
+        "id": 13,
+        "text": "The Giving Tree"
+    },
+    {
+        "id": 14,
+        "text": "The Wuthering Heights"
+    },
+    {
+        "id": 15,
+        "text": "The Da Vinci Code"
+    },
+    {
+        "id": 16,
+        "text": "Memoirs of a Geisha"
+    },
+    {
+        "id": 17,
+        "text": "Alice's Adventures in Wonderland & Through the Looking-Glass"
+    },
+    {
+        "id": 18,
+        "text": "The Picture of Dorian Gray"
+    },
+    {
+        "id": 19,
+        "text": "Les Misérables"
+    },
+    {
+        "id": 20,
+        "text": "Divergent"
+    },
+    {
+        "id": 21,
+        "text": "Jane Eyre"
+    },
+    {
+        "id": 22,
+        "text": "Romeo and Juliet"
+    },
+    {
+        "id": 23,
+        "text": "Lord of the Flies"
+    },
+    {
+        "id": 24,
+        "text": "The Alchemist"
+    },
+    {
+        "id": 25,
+        "text": "Crime and Punishment"
+    },
+    {
+        "id": 26,
+        "text": "Ender's Game"
+    },
+    {
+        "id": 27,
+        "text": "The Perks of Being a Wallflower"
+    },
+    {
+        "id": 28,
+        "text": "City of Bones"
+    },
+    {
+        "id": 29,
+        "text": "The Help"
+    },
+    {
+        "id": 30,
+        "text": "The Great Gatsby"
+    },
+    {
+        "id": 31,
+        "text": "The Time Traveler's Wife"
+    },
+    {
+        "id": 32,
+        "text": "Charlotte's Web"
+    },
+    {
+        "id": 33,
+        "text": "Anne of Green Gables"
+    },
+    {
+        "id": 34,
+        "text": "Of Mice and Men"
+    },
+    {
+        "id": 35,
+        "text": "Dracula"
+    },
+    {
+        "id": 36,
+        "text": "Brave New World"
+    },
+    {
+        "id": 37,
+        "text": "One Hundred Years of Solitude"
+    },
+    {
+        "id": 38,
+        "text": "The Little Prince"
+    },
+    {
+        "id": 39,
+        "text": "The Princess Bride"
+    },
+    {
+        "id": 40,
+        "text": "The Secret Garden"
+    },
+    {
+        "id": 41,
+        "text": "The Catcher in the Rye"
+    },
+    {
+        "id": 42,
+        "text": "A Thousand Splendid Suns"
+    },
+    {
+        "id": 43,
+        "text": "A Wrinkle in Time"
+    },
+    {
+        "id": 44,
+        "text": "Fahrenheit 451"
+    },
+    {
+        "id": 45,
+        "text": "A Game of Thrones"
+    },
+    {
+        "id": 46,
+        "text": "The Lightning Thief"
+    },
+    {
+        "id": 47,
+        "text": "The Adventures of Huckleberry Finn"
+    },
+    {
+        "id": 48,
+        "text": "The Lovely Bones"
+    },
+    {
+        "id": 49,
+        "text": "Where the Wild Things Are"
+    },
+    {
+        "id": 50,
+        "text": "Green Eggs and Ham"
+    }
+]

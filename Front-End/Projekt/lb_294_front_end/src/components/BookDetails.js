@@ -30,6 +30,8 @@ const BookDetails = () => {
             <p>{book?.authors}</p>
             <h2>Genres</h2>
             <p>{book?.genres}</p>
+            <h2>Rating</h2>
+            <p>{book.rating}</p>
         </div>
     </div>
   );

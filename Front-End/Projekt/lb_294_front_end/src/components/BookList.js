@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../App';
 import { API_URL } from '../API.js';
 import axios from 'axios';
@@ -10,12 +10,20 @@ const BookList = () => {
 
   const { favourites, addToFavourites, removeFromFavourites } = useAppContext();
 
+  const { orders, addToOrders, removeFromOrders } = useAppContext();
+
   const navigate = useNavigate();
 
   const favouritesChecker = (id) => {
     const boolean = favourites.some((book) => book.id === id);
     return boolean;
   };
+
+  const buyerChecker = (id) => {
+    const boolean = orders.some((book) => book.id === id);
+    return boolean;
+  };
+
 
   useEffect(() => {
     axios
@@ -30,24 +38,35 @@ const BookList = () => {
   return (
   <div className='book-list'>
     {books.map((book) => (
-        <div key={book.id} className="book">
+    <div key={book.id} className="book">
             <div>
-                <h4>{book.title}</h4>
+                    <h4>{book.title}</h4>
             </div>
             <div>
-                <img src={book.image_url} alt="#" onClick={()=>navigate(`/books/${book.id}`)}/>
+                    <img src={book.image_url} alt="#" onClick={()=>navigate(`/books/${book.id}`)}/>
             </div>
-            <div>
-                {favouritesChecker(book.id) ? (
-                    <button onClick={() => removeFromFavourites(book.id)}>
-                        Remove from Favourites
-                    </button>
-                ) : (
-                 <button onClick={() => addToFavourites(book)}>
-                        Add to Favourites
-                    </button>
-                )};
-            </div>
+                <div>
+                    {favouritesChecker(book.id) ? (
+                        <button onClick={() => removeFromFavourites(book.id)}>
+                            Remove from Favourites
+                        </button>
+                    ) : (
+                    <button onClick={() => addToFavourites(book)}>
+                            Add to Favourites
+                        </button>
+                    )};
+
+                    {buyerChecker(book.id) ? (
+                        <button onClick={() => removeFromOrders(book.id)}>
+                            Remove From Order
+                        </button>  
+                    ) : ( 
+                    <button onClick={() => addToOrders(book)}>
+                            Add to Order
+                        </button>
+                    )};
+
+                </div>
         </div>
         ))}
     </div>

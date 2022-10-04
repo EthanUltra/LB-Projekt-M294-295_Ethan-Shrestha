@@ -14,7 +14,8 @@ export const useAppContext = () => {
 } 
 
 const AppContextProvider = ({children}) => {
-    const [favourites, setFavourites] = useState([]); 
+    const [favourites, setFavourites] = useState([]);
+    const [orders, setOrders] = useState([]);
 
     const addToFavourites = (book) => {
         const oldFavourites = [...favourites];
@@ -23,6 +24,7 @@ const AppContextProvider = ({children}) => {
 
         setFavourites(newFavourites);
     }
+
     const removeFromFavourites = (id) => {
         const oldFavourites = [...favourites];
         const newFavourites = oldFavourites.filter((book) => book.id !== id);
@@ -30,8 +32,24 @@ const AppContextProvider = ({children}) => {
         setFavourites(newFavourites);
     }
 
+    const addToOrders = (book) => {
+        const oldOrders = [...orders];
+
+        const newOrders = oldOrders.concat(book);
+
+        setOrders(newOrders);
+    }
+
+
+    const removeFromOrders = (id) => {
+        const oldOrders = [...orders];
+        const newOrders = oldOrders.filter((book) => book.id !== id);
+
+        setOrders(newOrders);
+    }
+
     return (
-        <AppContext.Provider value={{favourites, addToFavourites, removeFromFavourites}}>
+        <AppContext.Provider value={{ favourites, addToFavourites, removeFromFavourites, orders, addToOrders, removeFromOrders }}>
             {children}
         </AppContext.Provider>
     );
