@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App';
+import '../../App';
 import {Link} from 'react-router-dom';
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
               <Link to="/genres"><h3>Genres</h3></Link>
             </li>
             <li>
-              <Link to="/language"><h3>Sprache</h3></Link>
+              <Link to="/language"><h3>Language</h3></Link>
             </li>
             <li>
               <Link to="/orders"><h3>Orders</h3></Link>

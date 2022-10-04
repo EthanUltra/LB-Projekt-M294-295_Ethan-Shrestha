@@ -1,5 +1,5 @@
 package ch.wiss.webshop.model;
 
-public class BookRepositoy {
+public class BookRepository {
 	
 }

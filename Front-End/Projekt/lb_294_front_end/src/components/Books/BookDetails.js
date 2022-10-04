@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react';
-import "../App";
+import "../../App";
 import {useParams } from 'react-router-dom';
 import axios from 'axios';
-import { BOOK_DETAILS_URL } from '../API';
+import { BOOK_DETAILS_URL } from '../../API';
 
 const BookDetails = () => {
 

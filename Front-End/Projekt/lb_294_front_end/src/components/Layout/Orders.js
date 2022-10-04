@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App';
-import { useAppContext } from './context/appContext';
+import '../../App';
+import { useAppContext } from '../context/appContext';
 import { useNavigate } from 'react-router-dom';
 
 const Orders = () => {
@@ -30,18 +30,18 @@ const Orders = () => {
                         <div>
                             {ordersChecker(book.id) ? (
                                 <button onClick={() => removeFromOrders(book.id)}>
-                                    Remove from Favourites
+                                    Remove from Order
                                 </button>
                             ) : (
                                 <button onClick={() => addToOrders(book)}>
-                                    Add to Favourites
+                                    Add to Order
                                 </button>
                             )}
                         </div>
                     </div>
                 ))
             ) : (
-                <h1>You don't have any favourite books yet!</h1>
+                <h1>You don't have any orders yet!</h1>
             )}
         </div>
     );
