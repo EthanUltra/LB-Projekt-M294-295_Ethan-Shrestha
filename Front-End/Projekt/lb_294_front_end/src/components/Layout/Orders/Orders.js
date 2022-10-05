@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../App';
-import { useAppContext } from '../context/appContext';
+import '../../../App';
+import { useAppContext } from '../../context/appContext';
 import { useNavigate } from 'react-router-dom';
 
 const Orders = () => {

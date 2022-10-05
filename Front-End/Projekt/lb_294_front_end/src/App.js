@@ -1,17 +1,17 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Account from "./components/Layout/Account";
+import Account from "./components/Layout/Account/Account";
 import BookDetails from './components/Books/BookDetails';
 import BookList from "./components/Books/BookList";
-import Favourites from './components/Layout/Favourites';
-import Footer from "./components/Layout/Footer";
-import Forums from "./components/Layout/Forums";
-import Genres from "./components/Layout/Genres";
-import Language from "./components/Layout/Language";
-import Navbar from "./components/Layout/Navbar";
+import Favourites from './components/Layout/Favourites/Favourites';
+import Footer from "./components/Layout/Footer/Footer";
+import Forums from "./components/Layout/Forums/Forums";
+import Genres from "./components/Layout/Genres/Genres";
+import Language from "./components/Layout/Language/Language";
+import Navbar from "./components/Layout/Navigation/Navbar";
 import Searchbar from "./components/Layout/Searchbar/Searchbar";
-import Rating from "./components/Layout/Rating";
-import Orders from './components/Layout/Orders';
+import Rating from "./components/Layout/Rating/Rating";
+import Orders from './components/Layout/Orders/Orders';
 
 function App() {
   return (
