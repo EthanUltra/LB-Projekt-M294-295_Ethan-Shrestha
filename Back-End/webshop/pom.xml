@@ -14,8 +14,8 @@
 	<name>webshop</name>
 	<description>Für Leistungsbeurteilung M295</description>
 	<properties>
-		<java.version>17</java.version>
-	</properties>
+	   <java.version>1.8</java.version>
+	  </properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

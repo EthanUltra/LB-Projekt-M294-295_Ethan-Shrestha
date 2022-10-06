@@ -38,4 +38,6 @@ describe("Routing test for App.js", () => {
   expect(screen.getByText("Mocked_Home"))
   expect(screen.getByText("Mocked_GlobalNavigation"))
   });
+
+  
 }

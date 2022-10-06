@@ -12,6 +12,7 @@ import Navbar from "./components/Layout/Navigation/Navbar";
 import Searchbar from "./components/Layout/Searchbar/Searchbar";
 import Rating from "./components/Layout/Rating/Rating";
 import Orders from './components/Layout/Orders/Orders';
+import NotFound from './components/Layout/NotFound';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/genres" element={<Genres />} />
         <Route path="/rating" element={<Rating />} />
         <Route path="/orders" element={<Orders />} />
+      <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
