@@ -45,16 +45,4 @@ public class Account {
 	public void setPassword(String password) {
 		Password = password;
 	}
-	public void removeUsername(String account_id2) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void removeEmail(String email2) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void removePassword(String password2) {
-		// TODO Auto-generated method stub
-		
-	}
 }
