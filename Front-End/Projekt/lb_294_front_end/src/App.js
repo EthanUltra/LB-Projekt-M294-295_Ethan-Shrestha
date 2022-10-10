@@ -10,11 +10,11 @@ import Genres from "./components/Layout/Genres/Genres";
 import Language from "./components/Layout/Language/Language";
 import Navbar from "./components/Layout/Navigation/Navbar";
 import Searchbar from "./components/Layout/Searchbar/Searchbar";
-import Rating from "./components/Layout/Rating/Rating";
 import Orders from './components/Layout/Orders/Orders';
 import NotFound from './components/Layout/NotFound';
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />
@@ -27,7 +27,6 @@ function App() {
         <Route path="/language" element={<Language />} />
         <Route path="/searchbar" element={<Searchbar />} />
         <Route path="/genres" element={<Genres />} />
-        <Route path="/rating" element={<Rating />} />
         <Route path="/orders" element={<Orders />} />
       <Route path="*" element={<NotFound />} />
       </Routes>

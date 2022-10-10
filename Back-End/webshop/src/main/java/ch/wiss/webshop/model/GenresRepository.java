@@ -1,5 +1,7 @@
 package ch.wiss.webshop.model;
 
-public class GenresRepository {
+import org.springframework.data.repository.CrudRepository;
 
+public interface GenresRepository extends CrudRepository<Account, Integer> {
+	
 }

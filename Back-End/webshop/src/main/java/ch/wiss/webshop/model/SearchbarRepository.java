@@ -1,5 +1,7 @@
 package ch.wiss.webshop.model;
 
-public class SearchbarRepository {
+import org.springframework.data.repository.CrudRepository;
 
+public interface SearchbarRepository extends CrudRepository<Account, Integer> {
+	
 }

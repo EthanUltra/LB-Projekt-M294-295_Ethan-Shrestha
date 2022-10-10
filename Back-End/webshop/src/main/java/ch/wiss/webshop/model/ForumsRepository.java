@@ -1,5 +1,7 @@
 package ch.wiss.webshop.model;
 
-public class ForumsRepository {
+import org.springframework.data.repository.CrudRepository;
 
+public interface ForumsRepository extends CrudRepository<Account, Integer> {
+	
 }

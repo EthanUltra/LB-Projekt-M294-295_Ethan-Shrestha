@@ -1,5 +1,7 @@
 package ch.wiss.webshop.model;
 
-public class RatingRepository {
+import org.springframework.data.repository.CrudRepository;
 
+public interface RatingRepository extends CrudRepository<Account, Integer> {
+	
 }

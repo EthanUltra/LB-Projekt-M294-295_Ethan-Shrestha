@@ -1,5 +1,7 @@
 package ch.wiss.webshop.model;
 
-public class FavouriteRepository {
+import org.springframework.data.repository.CrudRepository;
 
+public interface FavouriteRepository extends CrudRepository<Account, Integer> {
+	
 }
