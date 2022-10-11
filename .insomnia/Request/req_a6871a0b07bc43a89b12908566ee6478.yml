@@ -1,0 +1,21 @@
+_id: req_a6871a0b07bc43a89b12908566ee6478
+type: Request
+parentId: fld_9349b4eeef954072aaa55d00c4413f3f
+modified: 1665167655522
+created: 1665167326868
+url: http://localhost:8080/item?item=Mein Item
+name: Deletes the item
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1665167327999
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

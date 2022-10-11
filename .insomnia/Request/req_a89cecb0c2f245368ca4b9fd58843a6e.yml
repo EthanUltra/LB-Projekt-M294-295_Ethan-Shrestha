@@ -1,0 +1,21 @@
+_id: req_a89cecb0c2f245368ca4b9fd58843a6e
+type: Request
+parentId: fld_abbfbe67463b4659aae5345500f7d32b
+modified: 1665496057317
+created: 1664441819078
+url: http://localhost:8080/forum/forums
+name: Shows the forums
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1664441819131.125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,21 @@
+_id: req_4d75e99b56f34873ae226e265dc7adbb
+type: Request
+parentId: fld_abbfbe67463b4659aae5345500f7d32b
+modified: 1665167859073
+created: 1664442399599
+url: http://localhost:8080/forums
+name: Deletes the Discussion
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1664441819031.125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

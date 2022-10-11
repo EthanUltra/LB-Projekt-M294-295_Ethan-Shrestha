@@ -1,0 +1,32 @@
+_id: req_bfd06aebb7ea455cb2a940482c9b85e8
+type: Request
+parentId: fld_2943edd679b34ddb9d0fd483054c70c3
+modified: 1665498771655
+created: 1664439857250
+url: http://localhost:8080/account/add
+name: Creates an account
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"id": 10,
+    		"password": "LolPassword",
+    		"username": "LolPassword",
+    		"email": "Lol@gmail.com"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_954039c6c2ba4ee0baa70f461ab999a2
+authentication: {}
+metaSortKey: -1665167641418.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

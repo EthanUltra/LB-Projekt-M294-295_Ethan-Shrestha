@@ -1,0 +1,21 @@
+_id: req_51cd9542df724067baac3a596e5da85c
+type: Request
+parentId: fld_9349b4eeef954072aaa55d00c4413f3f
+modified: 1665167796910
+created: 1665167327567
+url: http://localhost:8080/item?item=Mein Item
+name: Post the item
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1665167328024
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

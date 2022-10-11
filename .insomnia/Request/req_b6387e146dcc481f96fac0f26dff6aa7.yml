@@ -1,0 +1,21 @@
+_id: req_b6387e146dcc481f96fac0f26dff6aa7
+type: Request
+parentId: fld_1ae16c084d0941fd852247deea6f0f0e
+modified: 1665167909906
+created: 1664176650049
+url: http://localhost:8080/book?book=MyBook
+name: Deletes the book
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1664441818978
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
