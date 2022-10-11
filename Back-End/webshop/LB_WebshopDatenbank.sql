@@ -8,34 +8,42 @@ GRANT ALL ON LB_Webshop.* to 'LB_Webshop'@'%';
 GRANT INSERT, SELECT, UPDATE, DELETE ON lb_webshop.* TO LB_Webshop;
 
 CREATE TABLE Book (
-	book_id int(11) NOT NULL,
+	id int(11) NOT NULL,
     title varchar(100) NOT NULL,
-    author varchar(100) NOT NULL,
-    description varchar(5000) NOT NULL,
+    authors varchar(100) NOT NULL,
+    description varchar(5000) DEFAULT NULL,
     edition varchar(100) DEFAULT NULL,
-    format varchar(45) NOT NULL,
-    num_pages int(11) NOT NULL,
-    rating decimal(5,2) NOT NULL,
-    rating_count int(11) NOT NULL,
-	review_count int(11) NOT NULL,
-    genres varchar(2000) NOT NULL,
-    genre_list varchar(1000) NOT NULL,
-    image_url varchar(1000) NOT NULL,
-    quote1 varchar(2000) NOT NULL,
-    quote2 varchar(2000) NOT NULL,
-    quote3 varchar(2000) NOT NULL,
-    PRIMARY KEY (`book_id`)
+    format varchar(45) DEFAULT NULL,
+    num_pages int(11) DEFAULT NULL,
+    rating decimal(5,2) DEFAULT NULL,
+    rating_count int(11) DEFAULT NULL,
+	review_count int(11) DEFAULT NULL,
+    genres varchar(2000) DEFAULT NULL,
+    genre_list varchar(1000) DEFAULT NULL,
+    image_url varchar(1000) DEFAULT NULL,
+    Quote1 varchar(2000) DEFAULT NULL,
+    Quote2 varchar(2000) DEFAULT NULL,
+    Quote3 varchar(2000) DEFAULT NULL,
+    PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `account` (
-  `account_id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
-  PRIMARY KEY (`account_id`)
+  PRIMARY KEY (`id`)
 );
 
-INSERT INTO Book (book_id, title, author, description, edition, format, num_pages, rating, rating_count, review_count, genres, genre_list, image_url, Quote1, Quote2, Quote3)
+CREATE TABLE `forum` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `discussion` varchar(2000) NOT NULL,
+  PRIMARY KEY (`id`)
+ );
+
+
+INSERT INTO Book (id, title, authors, description, edition, format, num_pages, rating, rating_count, review_count, genres, genre_list, image_url, Quote1, Quote2, Quote3)
 VALUES (1, "The Hunger Games", "Suzanne Collins", "Winning will make you famous. Losing means certain death.The nation of Panem, formed from a post-apocalyptic North America, is a country that consists of a wealthy Capitol region surrounded by 12 poorer districts. Early in its history, a rebellion led by a 13th district against the Capitol resulted in its destruction and the creation of an annual televised event known as the Hunger Games. In punishment, and as a reminder of the power and grace of the Capitol, each district must yield one boy and one girl between the ages of 12 and 18 through a lottery system to participate in the games. The 'tributes' are chosen during the annual Reaping and are forced to fight to the death, leaving only one survivor to claim victory.When 16-year-old Katniss's young sister, Prim, is selected as District 12's female representative, Katniss volunteers to take her place. She and her male counterpart Peeta, are pitted against bigger, stronger representatives, some of whom have trained for this their whole lives. , she sees it as a death sentence. But Katniss has been close to death before. For her, survival is second nature.", "", "Hardcover", 374, 4.33, 5519135, 160706, "Young Adult, Fiction, Science Fiction, Dystopia, Fantasy, Science Fiction", "Young Adult,Fiction,Science Fiction,Dystopia,Fantasy", "https://images.gr-assets.com/books/1447303603l/2767052.jpg", "“You don’t forget the face of the person who was your last hope.”", "“Remember, we're madly in love, so it's all right to kiss me anytime you feel like it.”", "”May the odds be ever in your favor!”"),
 	   (2, "Harry Potter and the Order of the Ph1enix", "J.K. Rowling", " is a door at the end of a silent corridor. And it’s haunting Harry Pottter’s dreams. Why else would he be waking in the middle of the night, screaming in terror?Harry has a lot on his mind for this, his fifth year at Hogwarts: a Defense Against the Dark Arts teacher with a personality like poisoned honey; a big surprise on the Gryffindor Quidditch team; and the looming terror of the Ordinary Wizarding Level exams. But all these things pale next to the growing threat of He-Who-Must-Not-Be-Named---a threat that neither the magical government nor the authorities at Hogwarts can stop.As the grasp of darkness tightens, Harry must discover the true depth and strength of his friends, the importance of boundless loyalty, and the shocking price of unbearable sacrifice.His fate depends on them alll.(back cover)", "US Edition", "Paperback", 870, 4.48, 2041594, 33264, "Fantasy, Young Adult, Fiction", "Fantasy, Young Adult, Fiction", "https://images.gr-assets.com/books/1255614970l/2.jpg", "“Wit beyond measure is man’s greatest treasure.”", "“Indifference and neglect often do much more damage than outright dislike.”", "“Things we lose have a way of coming back to us in the end, if not always in the way we expect.”"),
        (3, "To Kill a Mockingbird", "Harper Lee", "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature.", "50th Anniversary", "Paperback", 324, 4.27, 3745197, 79450, "Classics, Fiction, Historical, Historical Fiction, Academic, School", "Classics,Fiction,Historical,Historical Fiction,Academic,School", "https://images.gr-assets.com/books/1361975680l/2657.jpg", "“Until I feared I would lose it, I never loved to read. One does not love breathing.”", "“People generally see what they look for, and hear what they listen for.”", "“The one thing that doesn't abide by majority rule is a person's conscience.”"),
@@ -87,6 +95,10 @@ VALUES (1, "The Hunger Games", "Suzanne Collins", "Winning will make you famous.
        (49, "Where the Wild Things Are", "Maurice Sendak", "One night Max puts on his wolf suit and makes mischief of one kind and another, so his mother calls him 'Wild Thing' and sends him to bed without his supper. That night a forest begins to grow in Max's room and an ocean rushes by with a boat to take Max to the place where the wild things are. Max tames the wild things and crowns himself as their king, and then the wild rumpus begins. But when Max has sent the monsters to bed, and everything is quiet, he starts to feel lonely and realises it is time to sail home to the place where someone loves him best of all.", "", "Paperback", 37, 4.22, 707526, 10364, "Childrens, Childrens, Picture Books, Fiction, Classics", "Childrens,Picture Books,Fiction,Classics", "https://images.gr-assets.com/books/1384434560l/19543.jpg", "“A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.”", "“It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.”", "“I must learn to be content with being happier than I deserve.”"),
        (50, "Green Eggs and Ham", "Dr. Seuss", "“Do you like green eggs and ham?” asks Sam-I-am in this Beginner Book by Dr. Seuss. In a house or with a mouse? In a boat or with a goat? On a train or in a tree? Sam keeps asking persistently. With unmistakable characters and signature rhymes, Dr. Seuss’s beloved favorite has cemented its place as a children’s classic. In this most famous of cumulative tales, the list of places to  green eggs and ham, and friends to enjoy them with, gets longer and longer. Follow Sam-I-am as he insists that this unusual treat is indeed a delectable snack to be savored everywhere and in every way. Originally created by Dr. Seuss, Beginner Books encourage children to read all by themselves, with simple words and illustrations that give clues to their meaning.", "", "Hardcover", 62, 4.3, 519703, 8147, "Childrens, Picture Books, Classics, Fiction", "Childrens,Picture Books,Classics,Fiction", "https://images.gr-assets.com/books/1468680100l/23772.jpg", "“I like the night. Without the dark, we'd never see the stars.”", "“I decided as long as I'm going to hell, I might as well do it thoroughly.”", "“When life offers you a dream so far beyond any of your expectations, it’s not reasonable to grieve when it comes to an end.”");
        
-       INSERT INTO account (account_id, username, email, password)
+       INSERT INTO account (id, username, email, password)
        VALUES (1, "ethan", "ethan@gmail.com", "ethanpassword"),
-       (2, "Example", "Example@gmail.com", "Examplepassword");
+			  (2, "Example", "Example@gmail.com", "Examplepassword");
+       
+       INSERT INTO forum (id, username, discussion)
+       VALUES (1, "ethan", "bookdiscussion"),
+			  (2, "example", "examplediscussion");
