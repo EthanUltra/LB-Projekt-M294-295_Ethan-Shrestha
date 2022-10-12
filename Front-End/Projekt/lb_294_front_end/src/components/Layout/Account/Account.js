@@ -9,6 +9,20 @@ function Account() {
   const [emailReg, setEmailReg] = useState("");
   const [passwordReg, setPasswordReg] = useState("");
 
+  useEffect(() => {
+    fetch('http:/localhost:8080/api/accounts').then(resp => resp.text())
+      .then(resp => {
+        console.log('Getting data from API')
+      })
+    loadAccounts();
+  }, []);
+
+  const loadAccounts=async()=>{
+    const result=await Axios.get("http://localhost:8080/account/accounts");
+    setUsernameReg(result.data);
+  };
+
+  /*
   const register = () => {
     Axios.post('http://localhost:8080/api/accounts', {
       username: usernameReg,
@@ -19,14 +33,11 @@ function Account() {
     })
   }
 
-  useEffect(() => {
+  const login = () => {
+    ?
+  }
+  */
 
-    fetch('http:/localhost:8080/api/accounts').then(resp => resp.text())
-      .then(resp => {
-        console.log('Getting data from API')
-      })
-
-  }, [])
 
 
   return (
@@ -54,7 +65,7 @@ function Account() {
             setPasswordReg(e.target.value);
           }}
         />
-        <button onClick={register}> Register </button>
+        <button /*onClick={Register}*/> Register </button>
       </div>
       <div className="login">
         <h1>Login</h1>
