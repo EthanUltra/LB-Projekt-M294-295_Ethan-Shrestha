@@ -1,0 +1,30 @@
+_id: req_f267b5187b67454f936aeff78ca58643
+type: Request
+parentId: fld_abbfbe67463b4659aae5345500f7d32b
+modified: 1665496095409
+created: 1664442384460
+url: http://localhost:8080/forum/add
+name: Creates a Discussion
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    	{
+    		"forum_id": 3,
+    		"username": "example",
+    		"discussion": "examplediscussion"
+    	}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1664441819081.125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

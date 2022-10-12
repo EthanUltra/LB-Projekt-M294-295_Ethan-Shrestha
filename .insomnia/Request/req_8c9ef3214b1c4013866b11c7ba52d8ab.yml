@@ -1,0 +1,21 @@
+_id: req_8c9ef3214b1c4013866b11c7ba52d8ab
+type: Request
+parentId: fld_2943edd679b34ddb9d0fd483054c70c3
+modified: 1665448011262
+created: 1664439827039
+url: http://localhost:8080/account/accounts
+name: Shows all of your accounts
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1665167641468.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_e56736861acd41658d3c11d8066be86c
+type: Request
+parentId: fld_2943edd679b34ddb9d0fd483054c70c3
+modified: 1665498050343
+created: 1664439879813
+url: http://localhost:8080/account/remove
+name: Deletes an account
+description: ""
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    
+    	{
+    		"id": 1,
+    		"password": "ethanpassword",
+    		"username": "ethan",
+    		"email": "ethan@gmail.com"
+    	}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1665167641368.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
