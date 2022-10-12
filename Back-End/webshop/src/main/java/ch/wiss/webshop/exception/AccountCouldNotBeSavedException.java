@@ -1,8 +1,8 @@
 package ch.wiss.webshop.exception;
 
 public class AccountCouldNotBeSavedException extends RuntimeException {
-	public AccountCouldNotBeSavedException(String name) {
-		super("The account '" + name + "' could not be saved. ");
+	public AccountCouldNotBeSavedException(String id) {
+		super("The account with id '" + id + "' could not be saved. ");
 	}
 
 }

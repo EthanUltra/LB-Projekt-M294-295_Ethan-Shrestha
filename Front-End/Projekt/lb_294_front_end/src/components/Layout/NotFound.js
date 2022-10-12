@@ -1,8 +1,8 @@
-/* eslint-disable no-useless-constructor */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 class NotFound extends React.Component {
+    // eslint-disable-next-line
     constructor(props) {
         super(props);
     }

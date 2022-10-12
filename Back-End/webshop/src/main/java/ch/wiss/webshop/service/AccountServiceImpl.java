@@ -2,6 +2,7 @@ package ch.wiss.webshop.service;
 
 import ch.wiss.webshop.model.Account;
 import ch.wiss.webshop.model.AccountRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

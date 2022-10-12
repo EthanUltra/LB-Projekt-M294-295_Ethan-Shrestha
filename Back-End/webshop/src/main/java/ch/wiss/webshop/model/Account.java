@@ -1,6 +1,5 @@
 package ch.wiss.webshop.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,21 +10,22 @@ import javax.persistence.Table;
 @Table(name = "Account")
 public class Account {
 
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer account_id;
-	@Column(name ="username")
+	private int id;
 	private String Username;
-	@Column(name="email")
 	private String Email;
-	@Column(name="password")
 	private String Password;
 	
+	public Account() {
+		
+	}
+	
 	public Integer getId() {
-		return account_id;
+		return id;
 	}
 	public void setId(Integer id) {
-		this.account_id = id;
+		this.id = id;
 	}
 	public String getUsername() {
 		return Username;

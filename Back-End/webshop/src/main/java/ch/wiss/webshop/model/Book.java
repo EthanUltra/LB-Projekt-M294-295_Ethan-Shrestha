@@ -1,9 +1,7 @@
 package ch.wiss.webshop.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,135 +10,118 @@ import javax.persistence.Table;
 public class Book {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer book_id;
-
-	@Column(name ="title")
-	private String Title;
-	@Column(name="author")
-	private String Author;
-	@Column(name="description")
-	private String Description;
-	@Column(name="edition")
-	private String Edition;
-	@Column(name="format")
-	private String Format;
-	@Column(name="num_pages")
-	private String NumPages;
-	@Column(name="rating")
-	private String Rating;
-	@Column(name="rating_count")
-	private String Rating_Count;
-	@Column(name="review_count")
-	private String Review_Count;
-	@Column(name="genres")
-	private String Genres;
-	@Column(name="genre_list")
-	private String Genre_List;
-	@Column(name="image_url")
-	private String Image_Url;
-	@Column(name="quote1")
-	private String Quote_1;
-	@Column(name="quote2")
-	private String Quote_2;
-	@Column(name="quote3")
-	private String Quote_3;
-	
-	public Integer getBook_id() {
-		return book_id;
+	@GeneratedValue
+	private Integer id;
+	private String title;
+	private String authors;
+	private String description;
+	private String edition;
+	private String format;
+	private String numPages;
+	private String rating;
+	private String rating_Count;
+	private String review_Count;
+	private String genres;
+	private String genre_List;
+	private String image_Url;
+	private String quote1;
+	private String quote2;
+	private String quote3;
+	public Integer getId() {
+		return id;
 	}
-	public void setBook_id(Integer book_id) {
-		this.book_id = book_id;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	public String getTitle() {
-		return Title;
+		return title;
 	}
 	public void setTitle(String title) {
-		Title = title;
+		this.title = title;
 	}
-	public String getAuthor() {
-		return Author;
+	public String getAuthors() {
+		return authors;
 	}
-	public void setAuthor(String author) {
-		Author = author;
+	public void setAuthors(String authors) {
+		this.authors = authors;
 	}
 	public String getDescription() {
-		return Description;
+		return description;
 	}
 	public void setDescription(String description) {
-		Description = description;
+		this.description = description;
 	}
 	public String getEdition() {
-		return Edition;
+		return edition;
 	}
 	public void setEdition(String edition) {
-		Edition = edition;
+		this.edition = edition;
 	}
 	public String getFormat() {
-		return Format;
+		return format;
 	}
 	public void setFormat(String format) {
-		Format = format;
+		this.format = format;
 	}
 	public String getNumPages() {
-		return NumPages;
+		return numPages;
 	}
 	public void setNumPages(String numPages) {
-		NumPages = numPages;
+		this.numPages = numPages;
 	}
 	public String getRating() {
-		return Rating;
+		return rating;
 	}
 	public void setRating(String rating) {
-		Rating = rating;
+		this.rating = rating;
 	}
 	public String getRating_Count() {
-		return Rating_Count;
+		return rating_Count;
 	}
 	public void setRating_Count(String rating_Count) {
-		Rating_Count = rating_Count;
+		this.rating_Count = rating_Count;
 	}
 	public String getReview_Count() {
-		return Review_Count;
+		return review_Count;
 	}
 	public void setReview_Count(String review_Count) {
-		Review_Count = review_Count;
+		this.review_Count = review_Count;
 	}
 	public String getGenres() {
-		return Genres;
+		return genres;
 	}
 	public void setGenres(String genres) {
-		Genres = genres;
+		this.genres = genres;
 	}
 	public String getGenre_List() {
-		return Genre_List;
+		return genre_List;
 	}
 	public void setGenre_List(String genre_List) {
-		Genre_List = genre_List;
+		this.genre_List = genre_List;
 	}
 	public String getImage_Url() {
-		return Image_Url;
+		return image_Url;
 	}
 	public void setImage_Url(String image_Url) {
-		Image_Url = image_Url;
+		this.image_Url = image_Url;
 	}
-	public String getQuote_1() {
-		return Quote_1;
+	public String getQuote1() {
+		return quote1;
 	}
-	public void setQuote_1(String quote_1) {
-		Quote_1 = quote_1;
+	public void setQuote1(String Quote1) {
+		this.quote1 = Quote1;
 	}
-	public String getQuote_2() {
-		return Quote_2;
+	public String getQuote2() {
+		return quote2;
 	}
-	public void setQuote_2(String quote_2) {
-		Quote_2 = quote_2;
+	public void setQuote2(String Quote2) {
+		this.quote2 = Quote2;
 	}
-	public String getQuote_3() {
-		return Quote_3;
+	public String getQuote3() {
+		return quote3;
 	}
-	public void setQuote_3(String quote_3) {
-		Quote_3 = quote_3;
-	}
+	public void setQuote3(String Quote3) {
+		this.quote3 = Quote3;
+	}	
 }
 

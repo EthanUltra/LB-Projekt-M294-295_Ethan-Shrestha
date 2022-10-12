@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,18 +21,18 @@ public class WebshopApplication {
 	
 	ArrayList<String> items = new ArrayList<>();
 	
-	public static void main(String[] args) {
-		SpringApplication.run(WebshopApplication.class, args);
-	}
-
 	@Bean
 	public WebMvcConfigurer configure() {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry reg) {
-				reg.addMapping("/*").allowedOrigins("*");
+				reg.addMapping("/**").allowedOrigins("*");
 			}
 		};
+	}
+	
+	public static void main(String[] args) {
+		SpringApplication.run(WebshopApplication.class, args);
 	}
 	
 	@GetMapping("/")
@@ -53,6 +54,5 @@ public class WebshopApplication {
 	@DeleteMapping("/item")
 	public String deleteItem(@RequestParam String item) {
 		return String.valueOf(items.remove(item));
-	}
-
+	}	
 }

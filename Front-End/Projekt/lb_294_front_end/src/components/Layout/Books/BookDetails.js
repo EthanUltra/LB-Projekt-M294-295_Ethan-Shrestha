@@ -1,9 +1,10 @@
 import React,{useState,useEffect} from 'react';
-import "../../App";
+import "../../../App";
 import {useParams } from 'react-router-dom';
 import axios from 'axios';
-import { BOOK_DETAILS_URL } from '../../API';
-import { useAppContext } from '../context/appContext';
+import { BOOK_DETAILS_URL } from '../../../API';
+import { useAppContext } from '../../context/appContext';
+import StarRating from '../../Layout/StarRating';
 
 const BookDetails = () => {
 
@@ -34,7 +35,7 @@ const BookDetails = () => {
     };
 
   return (
-    <div class="book-details">
+    <div className="book-details">
         <div className="book-image">
             <h2>{book?.title}</h2>
             <img src={book?.image_url} alt="#"/>
@@ -48,6 +49,7 @@ const BookDetails = () => {
             <p>{book?.genres}</p>
             <h2>Rating</h2>
             <p>{book.rating}</p>
+              <StarRating />
               <div>
                   {favouritesChecker(book.id) ? (
                       <button onClick={() => removeFromFavourites(book.id)}>

@@ -1,33 +1,38 @@
 package ch.wiss.webshop.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.NotEmpty;
 
 @Entity
-@Table(name = "Forums")
+@Table(name = "Forum")
 public class Forums {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-
-	@NotEmpty(message = "Category needs to have a name.")
-	private String name;
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
+	private int id;
+	private String Username;
+	private String Discussion;
 	
-	public void setId(Integer id) {
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
 		this.id = id;
 	}
+	public String getUsername() {
+		return Username;
+	}
+	public void setUsername(String username) {
+		Username = username;
+	}
+	public String getDiscussion() {
+		return Discussion;
+	}
+	public void setDiscussion(String discussion) {
+		Discussion = discussion;
+	}
+	
+	
+	
 }
 	

@@ -17,16 +17,13 @@ const Navbar = () => {
               <Link to="/account"><h3>Account</h3></Link>
             </li>
             <li>
+              <Link to="/books"><h3>Books</h3></Link>
+            </li>
+            <li>
               <Link to="/favourites"><h3>Favourites</h3></Link>
             </li>
             <li>
               <Link to="/forums"><h3>Forums</h3></Link>
-            </li>
-            <li>
-              <Link to="/genres"><h3>Genres</h3></Link>
-            </li>
-            <li>
-              <Link to="/language"><h3>Language</h3></Link>
             </li>
             <li>
               <Link to="/orders"><h3>Orders</h3></Link>
