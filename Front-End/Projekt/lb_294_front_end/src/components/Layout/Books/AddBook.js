@@ -29,12 +29,12 @@ export default function AddBook() {
     const onSubmit = async (e) => {
         e.preventDefault();
         await axios.post("http://localhost:8080/book/add", book);
-        navigate("/Books")
+        navigate("/Book")
     };
 
     return (
         <div>
-            <button><Link to="/Books">Back to Book</Link></button>
+            <button><Link to="/Book">Back to Book</Link></button>
             <form onSubmit={(e) => onSubmit(e)}>
                 <div className="registration">
                     <h1>Add an Book</h1>

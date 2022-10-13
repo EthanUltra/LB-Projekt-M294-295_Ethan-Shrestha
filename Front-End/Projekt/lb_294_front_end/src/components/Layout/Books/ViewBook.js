@@ -73,7 +73,7 @@ function ViewBook() {
                             </ul>
                         </div>
                     </div>
-                    <Link className="btn btn-primary my-2" to={"/Books"}>Back to Book</Link>
+                    <Link className="btn btn-primary my-2" to={"/Book"}>Back to Book</Link>
                 </div>
             </div>
         </div>

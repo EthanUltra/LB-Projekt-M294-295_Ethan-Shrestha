@@ -35,7 +35,7 @@ export default function EditBook() {
     const onSubmit = async (e) => {
         e.preventDefault();
         await axios.put(`http://localhost:8080/book/book/${id}`, Book);
-        navigate("/Books")
+        navigate("/Book")
     };
 
     const loadBook = async () => {
@@ -48,7 +48,7 @@ export default function EditBook() {
             <button><Link to="/Book">Back to Book</Link></button>
             <form onSubmit={(e) => onSubmit(e)}>
                 <div className="registration">
-                    <h1>Edit User</h1>
+                    <h1>Edit Book</h1>
                     <label htmlFor="title">Title</label>
                     <input
                         type={"text"}
