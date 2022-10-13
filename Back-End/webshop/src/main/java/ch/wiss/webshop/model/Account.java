@@ -7,10 +7,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Account")
+@Table(name = "Account") // This is from the MySQL Table: "Account"
 public class Account {
 
-
+	
+	// All contents from the table.
+	
 	@Id
 	private int id;
 	private String Username;
@@ -20,6 +22,8 @@ public class Account {
 	public Account() {
 		
 	}
+	
+	// Getter and Setters
 	
 	public Integer getId() {
 		return id;

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import java.util.HashMap;
 import java.util.Map;
 
-@ControllerAdvice
+@ControllerAdvice // This is for the exception to load.
 public class BookNotFoundAdvice {
 	
 	@ResponseBody
@@ -20,22 +20,6 @@ public class BookNotFoundAdvice {
 		Map<String,String> errorMap=new HashMap<>();
 		errorMap.put("errorMessage", exception.getMessage());
 		
-		return errorMap;
-	}
-		
-	public Map<String,String> exceptionHandler(BookCouldNotBeSavedException exception){
-			
-		Map<String,String> errorMap=new HashMap<>();
-		errorMap.put("errorMessage", exception.getMessage());
-			
-		return errorMap;
-	}
-	
-	public Map<String,String> exceptionHandler(BookLoadException exception){
-		
-		Map<String,String> errorMap=new HashMap<>();
-		errorMap.put("errorMessage", exception.getMessage());
-			
 		return errorMap;
 	}
 }
