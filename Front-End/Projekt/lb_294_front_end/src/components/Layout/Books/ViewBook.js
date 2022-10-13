@@ -8,7 +8,11 @@ function ViewBook() {
         title: "",
         authors: "",
         description: "",
-        rating: ""
+        numPages: "",
+        rating: "",
+        rating_Count:"",
+        review_Count:"",
+        genre:""
     });
 
     const { id } = useParams();
@@ -47,8 +51,24 @@ function ViewBook() {
                                     {Book.description}
                                 </li>
                                 <li className="list-group-item">
-                                    <b>Rating:</b>
+                                    <b>Number of Pages:</b>
+                                    {Book.numPages}
+                                </li>
+                                <li className="list-group-item">
+                                    <b>Rating (with decimals):</b>
                                     {Book.rating}
+                                </li>
+                                <li className="list-group-item">
+                                    <b>Rating Count:</b>
+                                    {Book.rating_Count}
+                                </li>
+                                <li className="list-group-item">
+                                    <b>Review Count:</b>
+                                    {Book.review_Count}
+                                </li>
+                                <li className="list-group-item">
+                                    <b>Genres:</b>
+                                    {Book.genres}
                                 </li>
                             </ul>
                         </div>

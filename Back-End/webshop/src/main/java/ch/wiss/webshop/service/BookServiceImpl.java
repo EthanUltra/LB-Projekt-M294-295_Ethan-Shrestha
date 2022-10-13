@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import ch.wiss.webshop.model.Book;
 import ch.wiss.webshop.model.BookRepository;
 
+// This is to implement the Book to BookController.
+
 @Service
 public class BookServiceImpl implements BookService {
 	

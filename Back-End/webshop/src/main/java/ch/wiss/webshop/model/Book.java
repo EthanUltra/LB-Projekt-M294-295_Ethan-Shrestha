@@ -1,16 +1,17 @@
 package ch.wiss.webshop.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Book")
+@Table(name = "Book") // This is from the MySQL Table: "Book"
 public class Book {
 
+	
+	// All contents from the table.
+	
 	@Id
-	@GeneratedValue
 	private Integer id;
 	private String title;
 	private String authors;
@@ -27,6 +28,9 @@ public class Book {
 	private String quote1;
 	private String quote2;
 	private String quote3;
+	
+	// Getters and Setters
+	
 	public Integer getId() {
 		return id;
 	}

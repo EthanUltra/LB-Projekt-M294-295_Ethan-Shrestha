@@ -40,7 +40,7 @@ function App() {
         <Route path="/addforums" element={<AddForums />} />
         <Route path="/editforums/:id" element={<EditForums />} />
         <Route path="/viewforums/:id" element={<ViewForums />} />
-        <Route path="/books" element={<Book />} />
+        <Route path="/book" element={<Book />} />
         <Route path="/addbook" element={<AddBook />} />
         <Route path="/editbook/:id" element={<EditBook />} />
         <Route path="/viewbook/:id" element={<ViewBook />} />

@@ -19,6 +19,11 @@ import ch.wiss.webshop.model.ForumsRepository;
 @SpringBootTest
 public class WebshopApplicationTests {
 
+	/* 
+	 * Das sind sogenannte "Dependent On Components" kurz DOC's. 
+	 * Die Funktionalität dieser Objekte wird vom Framework simuliert 
+	 */
+	
 	@MockBean private AccountRepository accountRepository; 
 	@MockBean private BookRepository bookRepository;
 	@MockBean private ForumsRepository forumsRepository;

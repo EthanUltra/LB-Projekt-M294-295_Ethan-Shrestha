@@ -5,13 +5,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Forum")
+@Table(name = "Forum") // This is from the MySQL Table: "Forum"
 public class Forums {
 
+	// All contents from the table.
+	
 	@Id
 	private int id;
 	private String Username;
 	private String Discussion;
+	
+	// Getters and Setters
 	
 	public int getId() {
 		return id;

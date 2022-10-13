@@ -34,7 +34,6 @@ function Book() {
                                 <th scope="col">Title</th>
                                 <th scope="col">Authors</th>
                                 <th scope="col">Description</th>
-                                <th scope="col">Rating</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </tbody>
@@ -45,7 +44,6 @@ function Book() {
                                     <td>{book.title}</td>
                                     <td>{book.authors}</td>
                                     <td>{book.description}</td>
-                                    <td>{book.rating}</td>
                                     <td>
                                         <button className="btn btn-primary xm-2"><Link to={`/ViewBook/${book.id}`}>View</Link></button>
                                         <button className="btn btn-outline-primary xm-2"> <Link to={`/EditBook/${book.id}`}>Edit</Link></button>

@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import ch.wiss.webshop.model.Forums;
 import ch.wiss.webshop.model.ForumsRepository;
 
+// This is to implement the Forums to ForumsController.
+
 @Service
 public class ForumsServiceImpl implements ForumsService {
 	

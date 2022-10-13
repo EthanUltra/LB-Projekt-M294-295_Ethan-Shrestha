@@ -17,23 +17,23 @@ import ch.wiss.webshop.model.Account;
 import ch.wiss.webshop.model.AccountRepository;
 import ch.wiss.webshop.exception.AccountNotFoundException;
 
-@CrossOrigin(origins = "*")
-@RestController //
-@RequestMapping(path = "/account/")
+@CrossOrigin(origins = "*") // This is to allow access from Back-End to Front-End by allowing Origin (CORS).
+@RestController // // This means that this class is a Controller.
+@RequestMapping(path = "/account/") // This means URL's start with /account/ (after Application path).
 public class AccountController {
 	
-	@Autowired
+	@Autowired // Injects Account Repository.
 	private AccountRepository accountRepository;
 		
-	@GetMapping("/accounts")
+	@GetMapping("/accounts") // Map only GET Requests with all accounts. (Shows all accounts)
 	public List<Account> getAllAccounts() {
 		return (List<Account>) accountRepository.findAll();	
 	}
-	@PostMapping("/add")
+	@PostMapping("/add") // Map only POST Requests. (Creates an account)
 	Account newAccount(@RequestBody Account newAccount) {
 		return accountRepository.save(newAccount);
 	}
-	@PutMapping("/account/{id}")
+	@PutMapping("/account/{id}") // To only PUT Requests with a specific account with an id. (Change information)
 	Account updateAccount(@RequestBody Account newAccount, @PathVariable Integer id) {
 		return accountRepository.findById(id)
 				.map(account -> {
@@ -44,13 +44,13 @@ public class AccountController {
 				}).orElseThrow(() -> new AccountNotFoundException(id));
 	}
 	
-	@GetMapping("/account/{id}")
+	@GetMapping("/account/{id}") // Map only GET Requests with a specific account with an id. (Shows specific account with an id)
 	Account getAccountById(@PathVariable Integer id) {
 		return accountRepository.findById(id)
 				.orElseThrow(() -> new AccountNotFoundException(id));
 	}
 	
-	@DeleteMapping("/account/{id}")
+	@DeleteMapping("/account/{id}") // Map only DELETE Requests with a specific account with an id. (Deletes specific account with an id)
 	String deleteAccount(@PathVariable Integer id) {
 		if(!accountRepository.existsById(id)) {
 			throw new AccountNotFoundException(id); 
