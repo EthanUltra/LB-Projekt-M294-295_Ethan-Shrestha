@@ -14,10 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import ch.wiss.webshop.exception.ForumsNotFoundException;
-import ch.wiss.webshop.model.Book;
 import ch.wiss.webshop.model.Forums;
 import ch.wiss.webshop.model.ForumsRepository;
-import ch.wiss.webshop.service.ForumsService;
 
 @CrossOrigin(origins = "*") // This is to allow access from Back-End to Front-End by allowing Origin (CORS).
 @RestController // This means that this class is a Controller
