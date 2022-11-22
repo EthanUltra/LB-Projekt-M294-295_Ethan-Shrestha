@@ -8,13 +8,14 @@ export default function AddAccount() {
     let navigate = useNavigate();
 
     const [account, setAccount] = useState({
+        id: "",
         username: "",
         email: "",
         password: ""
     })
 
 
-    const { username, email, password } = account
+    const {id, username, email, password } = account
 
     const onInputChange = (e) => {
         setAccount({ ...account, [e.target.name]: e.target.value });
@@ -32,6 +33,14 @@ export default function AddAccount() {
             <form onSubmit={(e) => onSubmit(e)}>
                 <div className="registration">
                     <h1>Register an account</h1>
+                    <label htmlFor="id">ID</label>
+                    <input
+                        type={"text"}
+                        placeholder="ID..."
+                        name="id"
+                        value={id}
+                        onChange={(e) => onInputChange(e)}
+                    />
                     <label htmlFor="Username">Username</label>
                     <input
                         type={"text"}
