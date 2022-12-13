@@ -1,6 +1,6 @@
 <h1>My School Project<h1/>
-<h3>This is my project about React JS, Springboot Application and Docker all combined.
-Feel free to do anything about it.<h3/>
+<h3>This is my project about Docker, React JS and Springboot Application all combined.<h3/>
+<h3>Feel free to do anything about it.<h3/>
 <hr>
 
 <h5> Required Applications: <h5/>
