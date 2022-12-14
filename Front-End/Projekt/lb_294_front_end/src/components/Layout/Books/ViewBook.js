@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
 
-function ViewBook() {
+export default function ViewBook() {
 
     const [Book, setBook] = useState({
         title: "",
@@ -59,4 +59,3 @@ function ViewBook() {
         </div>
     );
 }
-export default ViewBook;
